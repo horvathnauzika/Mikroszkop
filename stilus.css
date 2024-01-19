@@ -77,8 +77,10 @@ aside ul{
 
 img{
     border: 10px solid #1f7a7a;
-    margin-left: 10%;
+    margin-left: 3%;
     margin-top: 5%;
+    width: 90%;
+    max-width: 450px;
 }
 
 .kepesszoveg{
@@ -92,7 +94,6 @@ header{
 
 nav{
     grid-area: n;
-    width: 300px;
 }
 
 article{
@@ -101,7 +102,6 @@ article{
 
 aside{
     grid-area: as;
-    width: 280px;
 }
 
 footer{
@@ -110,13 +110,14 @@ footer{
 
 main{
     display: grid;
+    grid-template-columns: 1fr 3fr 280px;
     grid-template-areas:
     "h h h"
     "n ar as"
     "f f f";
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     main{
         display: grid;
         grid-template-columns:1fr;
